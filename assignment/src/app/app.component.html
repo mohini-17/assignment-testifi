@@ -1,0 +1,12 @@
+<div class="container">
+
+    <h1>Montenegro IBAN Validator</h1>
+  <label for="iban">Enter IBAN:</label>
+  <input type="text" id="iban" [(ngModel)]="iban">
+  <button type="submit" id="submit"(click)="validate()">Validate</button>
+ 
+<div id="result" *ngIf="result !== null">
+  {{ result ? 'Valid Montenegro IBANs' : 'Invalid Montenegro IBANs' }}
+</div>
+</div>
+
